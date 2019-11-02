@@ -1,22 +1,17 @@
-var str;
-	var test1='p';
-	var test2='.myclass';
-	var test3='#myid';
-	
-    function $(str){
-		var re=0;
-		if(str==test3){
-			re=document.getElementById('myid');
-		}
-		if(str==test2){
-			re=document.getElementsByClassName('myclass');
-	    }
-		if(str==test1){
-			re=document.getElementsByTagName('p');
-	}
-	return re;
-	}
-	
-	console.log($('p'));
-    console.log($('#myid'));
-	console.log($('.myclass'));
+var a, b, c;
+ function $(work6) {
+     var d = work6.substring(0, 1);
+     if (d == '.') {
+         b = document.getElementsByClassName(work6.substring(1,work6.length));
+                   } else if (d == '#') {
+         a = document.getElementById(work6.substring(1, work6.length));
+                                        } else {
+         c = document.getElementsByTagName(work6);
+                                               }
+                                             }                 
+ $('#myid');
+ $('p');
+ $('.myClass'); 
+ console.log(a);
+ console.log(b);
+ console.log(c);
